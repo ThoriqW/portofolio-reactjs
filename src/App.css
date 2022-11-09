@@ -1,38 +1,182 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,400&display=swap");
+
+h1 {
+  font-family: var(--font-header);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --bg-primary: rgb(32, 32, 35);
+  --bg-second: #212121;
+  --bg-button: #be3144;
+  --sub-font: #a9a9a9;
+
+  --font-header: "Lora", serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo-navbar {
+  font-family: var(--font-header);
+  font-style: italic;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link-navbar {
+  font-size: 1.1rem;
+}
+
+.text-red {
+  color: var(--bg-button);
+}
+
+.header {
+  position: relative;
+  background-color: var(--bg-primary);
+}
+
+.intro {
+  height: 500px;
+}
+
+.text-intro {
+  font-family: var(--font-header);
+  font-weight: 800;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+#btn-primary {
+  background-color: var(--bg-button);
+  border: none;
+  box-shadow: 0px 10px 32px rgba(190, 49, 68, 0.54);
+}
+
+#btn-primary:hover {
+  background-color: rgba(190, 49, 68, 0.8);
+}
+
+.body-section {
+  background-color: var(--bg-primary);
+  padding: 40px 0;
+  position: relative;
+}
+
+.horizontal-rule {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.content-body {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.profile-about {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.profile-about .img {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: end;
 }
 
-.App-link {
-  color: #61dafb;
+.justify {
+  text-align: justify;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.img-profile {
+  border-radius: 100%;
+  width: 100px;
+}
+
+.title-section {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.img-icon {
+  width: 100px;
+}
+
+.cardItem {
+  background-color: var(--bg-primary);
+  border: none;
+}
+
+.card-subTitle {
+  font-weight: 200;
+  color: var(--sub-font);
+}
+
+.project-card {
+  width: 100%;
+}
+
+.projects-card-image {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.icon-project {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.icon-project:hover {
+  color: #be3144;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: var(--bg-primary);
+}
+
+.icon-social-media {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 150px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 1200px) {
+  .cardItem {
+    width: 15rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .profile-about {
+    width: 80%;
+  }
+
+  .profile-about .img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-intro {
+    font-size: 3.5rem;
+  }
+
+  .services-body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .projects-body {
+    margin-top: 50px;
+  }
+
+  .project-row {
+    padding: 0 20px;
   }
 }
