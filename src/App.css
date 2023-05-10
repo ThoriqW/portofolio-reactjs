@@ -22,6 +22,10 @@ h1 {
   font-size: 1.1rem;
 }
 
+.nav-link {
+  color: #ffff;
+}
+
 .text-red {
   color: var(--bg-button);
 }
@@ -29,6 +33,14 @@ h1 {
 .header {
   position: relative;
   background-color: var(--bg-primary);
+  overflow: hidden;
+}
+
+.image-vector {
+  position: absolute;
+  right: -120px;
+  top: -150px;
+  width: 400px;
 }
 
 .intro {
@@ -178,5 +190,9 @@ h1 {
 
   .project-row {
     padding: 0 20px;
+  }
+
+  .image-vector {
+    width: 200px;
   }
 }

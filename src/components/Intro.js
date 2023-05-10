@@ -1,9 +1,11 @@
 import { Button, Container, Row, Col } from "react-bootstrap";
 import NavigationBar from "./Navbar";
+import vector from "../assets/image/vector-1-header.svg";
 
 const Intro = () => {
   return (
     <div>
+      <img src={vector} className="image-vector" alt="img-vector"></img>
       <NavigationBar />
       <Container>
         <Row>
